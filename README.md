@@ -1,8 +1,8 @@
 <h1 align="center">
-  Automação de testes web Meu Tudo
+  Automação de testes web e api Meu Tudo
 </h1>
 
-Este documento descreve o passo a passo para rodar o projeto de testes automatizados web feito no [the-internet.herokuapp](https://the-internet.herokuapp.com/).
+Este documento descreve o passo a passo para rodar o projeto de testes automatizados
 
 ## Tecnologias utilizadas
 
@@ -25,27 +25,38 @@ pip install -U pip
 ```
 pip install robotframework
 ```
-- [Playwright precis do Node JS para rodar, utilizei a 20.11.1](https://nodejs.org/en/download/)
-
+- [Playwright precisa do Node JS para rodar, utilizei a 20.11.1](https://nodejs.org/en/download/)
 - [Versão mais recente do Playwright, utilizei a 18.1.0](https://github.com/MarketSquare/robotframework-browser)
 ```
 pip install robotframework-browser
 rfbrowser init
 ```
-- [Versão mais recente do Json Library, utilizei a 2.0.0](https://pypi.org/project/robotframework-jsonlibrary/)
+- [Versão mais recente do Json Library, utilizei a 0.5](https://pypi.org/project/robotframework-jsonlibrary/)
 ```
 pip install robotframework-jsonlibrary
 ```
-
-Recomenda-se reiniciar a máquina após a instalação do ambiente
+- [Versão mais recente do Requests Library, 0.9.6](https://docs.robotframework.org/docs/different_libraries/requests)
+```
+pip install robotframework-requests
+```
+IMPORTANTE: Recomenda-se reiniciar a máquina após a configuração do ambiente
 
 Para rodar o projeto, no terminal, acessar o repositório clonado. Ex: /c/Projetos/web-automation-meutudo
-e rodar o arquivo cliques.robot:
+e rodar o caminho que contém os arquivos de testes do robot:
 ```
-robot -d ./logs tests/cliques.robot
+robot -d ./logs tests/
 ```
 
-## Features do projeto
+## Features da suíte web
 
 - CT001 - Deve clicar nos três botões apresentados na tela
 - CT002 - Deve clicar em todos os botões edit e delete da grid
+
+## Features da suíte api
+
+- CT001 - GET no /users, valida response, schema e status code
+- CT002 - GET no /posts, valida response, schema e status code
+- CT003 - GET no /comments, valida response, schema e status code
+- CT004 - POST no /posts e valida response status
+- CT005 - PUT no /posts/1 e valida response status
+- CT006 - DELETE no /posts/1 e valida response status
