@@ -1,0 +1,192 @@
+{"level":30,"time":"2024-02-16T04:48:40.729Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Listening on 60418"}
+(node:1472) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-02-16T04:48:40.977Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:40.978Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:40.979Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:40.979Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:40.982Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-02-16T04:48:41.182Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Adding browser to stack: chromium, version: 121.0.6167.57"}
+{"level":30,"time":"2024-02-16T04:48:41.183Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-02-16T04:48:41.182Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-02-16T04:48:41.186Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-02-16T04:48:41.186Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-02-16T04:48:41.194Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active context"}
+{"level":30,"time":"2024-02-16T04:48:41.305Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Video path: undefined"}
+{"level":30,"time":"2024-02-16T04:48:41.305Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:44.392Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method newPage"}
+{"level":30,"time":"2024-02-16T04:48:44.395Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-02-16T04:48:44.626Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method goTo"}
+{"level":30,"time":"2024-02-16T04:48:44.628Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-02-16T04:48:44.629Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with css=h3 in page."}
+{"level":30,"time":"2024-02-16T04:48:44.647Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-02-16T04:48:44.649Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getText"}
+{"level":30,"time":"2024-02-16T04:48:44.649Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with css=h3 in page."}
+{"level":30,"time":"2024-02-16T04:48:44.663Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Retrieved text for element css=h3 containing Challenging DOM"}
+{"level":30,"time":"2024-02-16T04:48:44.664Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getText"}
+{"level":30,"time":"2024-02-16T04:48:44.666Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:44.667Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//a[@class='button'] in page."}
+{"level":30,"time":"2024-02-16T04:48:44.895Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:44.897Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:44.897Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//a[@class='button alert'] in page."}
+{"level":30,"time":"2024-02-16T04:48:45.137Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:45.139Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:45.139Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//a[@class='button success'] in page."}
+{"level":30,"time":"2024-02-16T04:48:45.372Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:45.375Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.381Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.382Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.384Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.385Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active context"}
+{"level":30,"time":"2024-02-16T04:48:45.385Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changing current active page: page=f2cb6669-3a8b-4090-a37f-659491c9bc3b"}
+{"level":30,"time":"2024-02-16T04:48:45.385Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:45.388Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.389Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.390Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:45.390Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:45.391Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:45.391Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:45.392Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changing current active page: page=f2cb6669-3a8b-4090-a37f-659491c9bc3b"}
+{"level":30,"time":"2024-02-16T04:48:45.392Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:45.394Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.394Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.395Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active context"}
+{"level":30,"time":"2024-02-16T04:48:45.395Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changing current active page: page=f2cb6669-3a8b-4090-a37f-659491c9bc3b"}
+{"level":30,"time":"2024-02-16T04:48:45.395Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:45.396Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-02-16T04:48:45.403Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Removed page=793118bc-9603-4408-acb3-14593ecd5b1f from context=a8928956-d984-4848-a8f4-1a7c4b4611b4 page stack"}
+{"level":30,"time":"2024-02-16T04:48:45.415Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-02-16T04:48:45.417Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.417Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:45.419Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:45.419Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:45.421Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-02-16T04:48:45.421Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-02-16T04:48:45.426Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active context"}
+{"level":30,"time":"2024-02-16T04:48:45.492Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Video path: undefined"}
+{"level":30,"time":"2024-02-16T04:48:45.492Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:48.523Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method newPage"}
+{"level":30,"time":"2024-02-16T04:48:48.525Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-02-16T04:48:48.756Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method goTo"}
+{"level":30,"time":"2024-02-16T04:48:48.758Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-02-16T04:48:48.758Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with css=h3 in page."}
+{"level":30,"time":"2024-02-16T04:48:48.772Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-02-16T04:48:48.774Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getText"}
+{"level":30,"time":"2024-02-16T04:48:48.774Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with css=h3 in page."}
+{"level":30,"time":"2024-02-16T04:48:48.786Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Retrieved text for element css=h3 containing Challenging DOM"}
+{"level":30,"time":"2024-02-16T04:48:48.786Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getText"}
+{"level":30,"time":"2024-02-16T04:48:48.788Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.788Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum0\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.811Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.813Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.813Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum0\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.832Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.835Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.835Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum1\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.851Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.853Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.853Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum1\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.872Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.875Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.875Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum2\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.894Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.896Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.896Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum2\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.914Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.917Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.917Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum3\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.935Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.937Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.937Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum3\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.956Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.959Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.959Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum4\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.977Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.978Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:48.978Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum4\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:48.998Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.000Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.000Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum5\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.018Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.020Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.020Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum5\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.039Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.041Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.041Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum6\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.060Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.061Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.061Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum6\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.081Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.084Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.084Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum7\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.102Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.103Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.103Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum7\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.122Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.124Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.124Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum8\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.143Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.145Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.145Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum8\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.164Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.166Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.166Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum9\"]/..//a[text()=\"edit\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.185Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.186Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.186Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Strict mode is enabled, find Locator with xpath=//td[text()=\"Phaedrum9\"]/..//a[text()=\"delete\"] in page."}
+{"level":30,"time":"2024-02-16T04:48:49.206Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method click"}
+{"level":30,"time":"2024-02-16T04:48:49.209Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.210Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.211Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.211Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.212Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active context"}
+{"level":30,"time":"2024-02-16T04:48:49.212Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changing current active page: page=5c771f3b-ea6a-43fe-9911-d57864866cf3"}
+{"level":30,"time":"2024-02-16T04:48:49.212Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:49.214Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.215Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.216Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:49.216Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:49.217Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:49.217Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-02-16T04:48:49.218Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changing current active page: page=5c771f3b-ea6a-43fe-9911-d57864866cf3"}
+{"level":30,"time":"2024-02-16T04:48:49.218Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:49.220Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.220Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.221Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active context"}
+{"level":30,"time":"2024-02-16T04:48:49.221Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changing current active page: page=5c771f3b-ea6a-43fe-9911-d57864866cf3"}
+{"level":30,"time":"2024-02-16T04:48:49.221Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Changed active page"}
+{"level":30,"time":"2024-02-16T04:48:49.222Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-02-16T04:48:49.227Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Removed page=1fecb824-3eae-47d9-a57d-f54351765d06 from context=7a798917-53f0-4e37-b89b-93c64d313f80 page stack"}
+{"level":30,"time":"2024-02-16T04:48:49.239Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-02-16T04:48:49.242Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.243Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.402Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.402Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.403Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.403Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.710Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.710Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.711Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:49.711Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.019Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.019Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.020Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.020Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.439Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.439Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.440Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.440Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.801Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.801Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.802Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:50.802Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.141Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.141Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.143Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.143Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.483Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.483Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.485Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.485Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-16T04:48:51.518Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-16T04:48:51.582Z","pid":1472,"hostname":"Clodoaldo-PC","msg":"End of node method closeAllBrowsers"}

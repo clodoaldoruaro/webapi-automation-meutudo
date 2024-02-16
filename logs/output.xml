@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-16T01:48:40.299834" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Projetos\webapi-automation-meutudo\tests">
+<suite id="s1-s1" name="Cliques" source="C:\Projetos\webapi-automation-meutudo\tests\cliques.robot">
+<test id="s1-s1-t1" name="CT001 - Deve clicar nos três botões apresentados na tela" line="11">
+<kw name="Inicia navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-02-16T01:48:40.981822" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Projetos\\webapi-automation-meutudo\\logs\\browser\\traces\\e575db4d-fe96-4e97-9a5c-052163b2df43"}</msg>
+<msg time="2024-02-16T01:48:41.184005" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Projetos\\webapi-automation-meutudo\\logs\\browser\\traces\\e575db4d-fe96-4e97-9a5c-052163b2df43"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=off</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-02-16T01:48:40.981822" elapsed="0.203184"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-02-16T01:48:44.393908" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/</msg>
+<msg time="2024-02-16T01:48:44.393908" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${WEB_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-02-16T01:48:41.185006" elapsed="3.208902"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:40.980822" elapsed="3.413086"/>
+</kw>
+<kw name="Acessar a pagina" owner="homePage">
+<kw name="Go To" owner="Browser">
+<msg time="2024-02-16T01:48:44.627157" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/challenging_dom</msg>
+<arg>${WEB_URL}${path}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.394909" elapsed="0.233249"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:44.628158" level="INFO">${element} = css=h3</msg>
+<var>${element}</var>
+<arg>css=h3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.628158" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-02-16T01:48:44.648176" level="INFO">Waited for Element with selector css=h3 at state visible</msg>
+<arg>${element}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.628158" elapsed="0.020018"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-02-16T01:48:44.665192" level="INFO">Text: 'Challenging DOM'</msg>
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${expected-text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.648176" elapsed="0.017016"/>
+</kw>
+<arg>challenging_dom</arg>
+<arg>Challenging DOM</arg>
+<status status="PASS" start="2024-02-16T01:48:44.393908" elapsed="0.271284"/>
+</kw>
+<kw name="Clica nos 3 botões apresentados na tela" owner="challengingDOM">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:44.666193" level="INFO">${button} = xpath=//a[@class='button']</msg>
+<var>${button}</var>
+<arg>xpath=//a[@class='button']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.666193" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:44.666193" level="INFO">${button-alert} = xpath=//a[@class='button alert']</msg>
+<var>${button-alert}</var>
+<arg>xpath=//a[@class='button alert']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.666193" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:44.666193" level="INFO">${button-success} = xpath=//a[@class='button success']</msg>
+<var>${button-success}</var>
+<arg>xpath=//a[@class='button success']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.666193" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.666193" elapsed="0.229958"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-alert}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:44.896151" elapsed="0.242797"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-success}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:45.138948" elapsed="0.234583"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:44.665192" elapsed="0.708339"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:40.978819" elapsed="4.394712"/>
+</test>
+<test id="s1-s1-t2" name="CT002 - Deve clicar em todos os botões edit e delete da grid" line="16">
+<kw name="Inicia navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-02-16T01:48:45.419572" level="INFO">Switching browser to browser=cf1ab615-e8c2-4fd0-8dfd-22e633574f45</msg>
+<msg time="2024-02-16T01:48:45.420575" level="INFO">Successfully changed active browser: browser=cf1ab615-e8c2-4fd0-8dfd-22e633574f45</msg>
+<msg time="2024-02-16T01:48:45.420575" level="INFO">Reusing existing browser with id: browser=cf1ab615-e8c2-4fd0-8dfd-22e633574f45</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=off</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-02-16T01:48:45.418571" elapsed="0.002004"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-02-16T01:48:48.523737" level="INFO">Successfully initialized new page object and opened url: https://the-internet.herokuapp.com/</msg>
+<msg time="2024-02-16T01:48:48.524738" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${WEB_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-02-16T01:48:45.420575" elapsed="3.104163"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:45.418571" elapsed="3.106167"/>
+</kw>
+<kw name="Acessar a pagina" owner="homePage">
+<kw name="Go To" owner="Browser">
+<msg time="2024-02-16T01:48:48.756649" level="INFO">Successfully opened URL https://the-internet.herokuapp.com/challenging_dom</msg>
+<arg>${WEB_URL}${path}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.524738" elapsed="0.232913"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.757651" level="INFO">${element} = css=h3</msg>
+<var>${element}</var>
+<arg>css=h3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.757651" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-02-16T01:48:48.773665" level="INFO">Waited for Element with selector css=h3 at state visible</msg>
+<arg>${element}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.757651" elapsed="0.016014"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-02-16T01:48:48.786677" level="INFO">Text: 'Challenging DOM'</msg>
+<arg>${element}</arg>
+<arg>equal</arg>
+<arg>${expected-text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.773665" elapsed="0.014013"/>
+</kw>
+<arg>challenging_dom</arg>
+<arg>Challenging DOM</arg>
+<status status="PASS" start="2024-02-16T01:48:48.524738" elapsed="0.262940"/>
+</kw>
+<kw name="Clica em todos os botões edit e delete da grid" owner="challengingDOM">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.787678" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum0"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.787678" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.788679" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum0"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.788679" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.788679" elapsed="0.024261"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.812940" elapsed="0.021018"/>
+</kw>
+<var name="${count}">0</var>
+<status status="PASS" start="2024-02-16T01:48:48.787678" elapsed="0.047281"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.834959" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum1"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.834959" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.834959" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum1"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.834959" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.834959" elapsed="0.018013"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.852972" elapsed="0.021021"/>
+</kw>
+<var name="${count}">1</var>
+<status status="PASS" start="2024-02-16T01:48:48.834959" elapsed="0.039034"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.873993" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum2"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.873993" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.874994" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum2"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.874994" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.874994" elapsed="0.020009"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.895003" elapsed="0.021009"/>
+</kw>
+<var name="${count}">2</var>
+<status status="PASS" start="2024-02-16T01:48:48.873993" elapsed="0.042019"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.916012" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum3"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.916012" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.917013" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum3"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.916012" elapsed="0.001001"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.917013" elapsed="0.019017"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.936030" elapsed="0.022012"/>
+</kw>
+<var name="${count}">3</var>
+<status status="PASS" start="2024-02-16T01:48:48.916012" elapsed="0.042030"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.958042" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum4"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.958042" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:48.958042" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum4"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.958042" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.959042" elapsed="0.019018"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:48.978060" elapsed="0.021011"/>
+</kw>
+<var name="${count}">4</var>
+<status status="PASS" start="2024-02-16T01:48:48.958042" elapsed="0.041029"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.000070" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum5"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.000070" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.000070" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum5"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.000070" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.000070" elapsed="0.020012"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.020082" elapsed="0.021019"/>
+</kw>
+<var name="${count}">5</var>
+<status status="PASS" start="2024-02-16T01:48:48.999071" elapsed="0.042030"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.041101" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum6"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.041101" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.041101" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum6"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.041101" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.041101" elapsed="0.020008"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.061109" elapsed="0.022009"/>
+</kw>
+<var name="${count}">6</var>
+<status status="PASS" start="2024-02-16T01:48:49.041101" elapsed="0.042017"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.083118" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum7"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.083118" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.083118" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum7"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.083118" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.083118" elapsed="0.020019"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.103137" elapsed="0.020019"/>
+</kw>
+<var name="${count}">7</var>
+<status status="PASS" start="2024-02-16T01:48:49.083118" elapsed="0.040038"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.124156" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum8"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.124156" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.124156" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum8"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.124156" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.124156" elapsed="0.021011"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.145167" elapsed="0.021010"/>
+</kw>
+<var name="${count}">8</var>
+<status status="PASS" start="2024-02-16T01:48:49.124156" elapsed="0.042021"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.166177" level="INFO">${button-edit} = xpath=//td[text()="Phaedrum9"]/..//a[text()="edit"]</msg>
+<var>${button-edit}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="edit"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.166177" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.166177" level="INFO">${button-delete} = xpath=//td[text()="Phaedrum9"]/..//a[text()="delete"]</msg>
+<var>${button-delete}</var>
+<arg>xpath=//td[text()="Phaedrum${count}"]/..//a[text()="delete"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.166177" elapsed="0.000000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-edit}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.166177" elapsed="0.020018"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${button-delete}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.186195" elapsed="0.021014"/>
+</kw>
+<var name="${count}">9</var>
+<status status="PASS" start="2024-02-16T01:48:49.166177" elapsed="0.041032"/>
+</iter>
+<var>${count}</var>
+<value>0</value>
+<value>10</value>
+<status status="PASS" start="2024-02-16T01:48:48.787678" elapsed="0.419531"/>
+</for>
+<status status="PASS" start="2024-02-16T01:48:48.787678" elapsed="0.420531"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:45.416570" elapsed="3.791639"/>
+</test>
+<doc>Suite de teste que valida testes WEB.</doc>
+<status status="PASS" start="2024-02-16T01:48:40.312846" elapsed="8.928394"/>
+</suite>
+<suite id="s1-s2" name="Requests" source="C:\Projetos\webapi-automation-meutudo\tests\requests.robot">
+<test id="s1-s2-t1" name="CT001 - GET no /users, valida response, schema e status code" line="11">
+<kw name="Dado que realizo GET no endpoint &quot;users&quot;" owner="services" source_name="Dado que realizo GET no endpoint &quot;${path}&quot;">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2024-02-16T01:48:49.696619" level="INFO">GET Request : url=http://jsonplaceholder.typicode.com/users 
+ path_url=/users 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-02-16T01:48:49.696619" level="INFO">GET Response : url=http://jsonplaceholder.typicode.com/users 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 16 Feb 2024 04:48:48 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1707834899&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=KqSFVmU81omtqfRUqBqEbN%2Bx2p9njXExC5Bm80COdSw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1707834899&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=KqSFVmU81omtqfRUqBqEbN%2Bx2p9njXExC5Bm80COdSw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1707834935', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'Content-Encoding': 'gzip', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '2513', 'Server': 'cloudflare', 'CF-RAY': '8563290fde158df4-MIA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body=[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+] 
+ </msg>
+<msg time="2024-02-16T01:48:49.696619" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${API_URL}${path}</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.404388" elapsed="0.292231"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.696619" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.696619" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.404388" elapsed="0.292231"/>
+</kw>
+<kw name="Quando valido o response &quot;responseUsers&quot;" owner="services" source_name="Quando valido o response &quot;${expectedResponseJson}&quot;">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-02-16T01:48:49.697631" level="INFO">${fileJson} = [{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {...</msg>
+<var>${fileJson}</var>
+<arg>${EXECDIR}/resources/fixtures/${expectedResponseJson}.json</arg>
+<arg>encoding=utf-8</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.697631" elapsed="0.000992"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<arg>${fileJson}</arg>
+<arg>msg=Response diferente do esperado</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.698623" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.697631" elapsed="0.000992"/>
+</kw>
+<kw name="Então recebo o status code &quot;200&quot;" owner="services" source_name="Então recebo o status code &quot;${expectedStatusCode}&quot;">
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${expectedStatusCode}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.698623" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.698623" elapsed="0.000000"/>
+</kw>
+<kw name="E valido o schema &quot;schemaUsers&quot;" owner="services" source_name="E valido o schema &quot;${schema}&quot;">
+<kw name="Validate Jsonschema From File" owner="JsonValidator">
+<arg>${response.json()}</arg>
+<arg>${EXECDIR}/resources/fixtures/${schema}.json</arg>
+<doc>Validate JSON according to schema, loaded from a file.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.699624" elapsed="0.009008"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.699624" elapsed="0.009008"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.403387" elapsed="0.305245"/>
+</test>
+<test id="s1-s2-t2" name="CT002 - GET no /posts, valida response, schema e status code" line="17">
+<kw name="Dado que realizo GET no endpoint &quot;posts&quot;" owner="services" source_name="Dado que realizo GET no endpoint &quot;${path}&quot;">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2024-02-16T01:48:49.991826" level="INFO">GET Request : url=http://jsonplaceholder.typicode.com/posts 
+ path_url=/posts 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-02-16T01:48:49.991826" level="INFO">GET Response : url=http://jsonplaceholder.typicode.com/posts 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 16 Feb 2024 04:48:48 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708035077&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=kSp8JeW7WU1VIZM6L6Eprljfl%2BlRU1%2BszA02nOuTJHQ%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708035077&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=kSp8JeW7WU1VIZM6L6Eprljfl%2BlRU1%2BszA02nOuTJHQ%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1708035097', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM"', 'Content-Encoding': 'gzip', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '23851', 'Server': 'cloudflare', 'CF-RAY': '85632911b9f0daed-MIA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body=[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "eum et est occaecati",
+    "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "nesciunt quas odio",
+    "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "dolorem eum magni eos aperiam quia",
+    "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "magnam facilis autem",
+    "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "dolorem dolore est ipsam",
+    "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "nesciunt iure omnis dolorem tempora et accusantium",
+    "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "optio molestias id quia eum",
+    "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+  },
+  {
+    "userId": 2,
+    "id": 11,
+    "title": "et ea vero quia laudantium autem",
+    "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi"
+  },
+  {
+    "userId": 2,
+    "id": 12,
+    "title": "in quibusdam tempore odit est dolorem",
+    "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio"
+  },
+  {
+    "userId": 2,
+    "id": 13,
+    "title": "dolorum ut in voluptas mollitia et saepe quo animi",
+    "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam"
+  },
+  {
+    "userId": 2,
+    "id": 14,
+    "title": "voluptatem eligendi optio",
+    "body": "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illum"
+  },
+  {
+    "userId": 2,
+    "id": 15,
+    "title": "eveniet quod temporibus",
+    "body": "reprehenderit quos placeat\nvelit minima officia dolores impedit repudiandae molestiae nam\nvoluptas recusandae quis delectus\nofficiis harum fugiat vitae"
+  },
+  {
+    "userId": 2,
+    "id": 16,
+    "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
+    "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
+  },
+  {
+    "userId": 2,
+    "id": 17,
+    "title": "fugit voluptas sed molestias voluptatem provident",
+    "body": "eos voluptas et aut odit natus earum\naspernatur fuga molestiae ullam\ndeserunt ratione qui eos\nqui nihil ratione nemo velit ut aut id quo"
+  },
+  {
+    "userId": 2,
+    "id": 18,
+    "title": "voluptate et itaque vero tempora molestiae",
+    "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam"
+  },
+  {
+    "userId": 2,
+    "id": 19,
+    "title": "adipisci placeat illum aut reiciendis qui",
+    "body": "illum quis cupiditate provident sit magnam\nea sed aut omnis\nveniam maiores ullam consequatur atque\nadipisci quo iste expedita sit quos voluptas"
+  },
+  {
+    "userId": 2,
+    "id": 20,
+    "title": "doloribus ad provident suscipit at",
+    "body": "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo"
+  },
+  {
+    "userId": 3,
+    "id": 21,
+    "title": "asperiores ea ipsam voluptatibus modi minima quia sint",
+    "body": "repellat aliquid praesentium dolorem quo\nsed totam minus non itaque\nnihil labore molestiae sunt dolor eveniet hic recusandae veniam\ntempora et tenetur expedita sunt"
+  },
+  {
+    "userId": 3,
+    "id": 22,
+    "title": "dolor sint quo a velit explicabo quia nam",
+    "body": "eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse"
+  },
+  {
+    "userId": 3,
+    "id": 23,
+    "title": "maxime id vitae nihil numquam",
+    "body": "veritatis unde neque eligendi\nquae quod architecto quo neque vitae\nest illo sit tempora doloremque fugit quod\net et vel beatae sequi ullam sed tenetur perspiciatis"
+  },
+  {
+    "userId": 3,
+    "id": 24,
+    "title": "autem hic labore sunt dolores incidunt",
+    "body": "enim et ex nulla\nomnis voluptas quia qui\nvoluptatem consequatur numquam aliquam sunt\ntotam recusandae id dignissimos aut sed asperiores deserunt"
+  },
+  {
+    "userId": 3,
+    "id": 25,
+    "title": "rem alias distinctio quo quis",
+    "body": "ullam consequatur ut\nomnis quis sit vel consequuntur\nipsa eligendi ipsum molestiae et omnis error nostrum\nmolestiae illo tempore quia et distinctio"
+  },
+  {
+    "userId": 3,
+    "id": 26,
+    "title": "est et quae odit qui non",
+    "body": "similique esse doloribus nihil accusamus\nomnis dolorem fuga consequuntur reprehenderit fugit recusandae temporibus\nperspiciatis cum ut laudantium\nomnis aut molestiae vel vero"
+  },
+  {
+    "userId": 3,
+    "id": 27,
+    "title": "quasi id et eos tenetur aut quo autem",
+    "body": "eum sed dolores ipsam sint possimus debitis occaecati\ndebitis qui qui et\nut placeat enim earum aut odit facilis\nconsequatur suscipit necessitatibus rerum sed inventore temporibus consequatur"
+  },
+  {
+    "userId": 3,
+    "id": 28,
+    "title": "delectus ullam et corporis nulla voluptas sequi",
+    "body": "non et quaerat ex quae ad maiores\nmaiores recusandae totam aut blanditiis mollitia quas illo\nut voluptatibus voluptatem\nsimilique nostrum eum"
+  },
+  {
+    "userId": 3,
+    "id": 29,
+    "title": "iusto eius quod necessitatibus culpa ea",
+    "body": "odit magnam ut saepe sed non qui\ntempora atque nihil\naccusamus illum doloribus illo dolor\neligendi repudiandae odit magni similique sed cum maiores"
+  },
+  {
+    "userId": 3,
+    "id": 30,
+    "title": "a quo magni similique perferendis",
+    "body": "alias dolor cumque\nimpedit blanditiis non eveniet odio maxime\nblanditiis amet eius quis tempora quia autem rem\na provident perspiciatis quia"
+  },
+  {
+    "userId": 4,
+    "id": 31,
+    "title": "ullam ut quidem id aut vel consequuntur",
+    "body": "debitis eius sed quibusdam non quis consectetur vitae\nimpedit ut qui consequatur sed aut in\nquidem sit nostrum et maiores adipisci atque\nquaerat voluptatem adipisci repudiandae"
+  },
+  {
+    "userId": 4,
+    "id": 32,
+    "title": "doloremque illum aliquid sunt",
+    "body": "deserunt eos nobis asperiores et hic\nest debitis repellat molestiae optio\nnihil ratione ut eos beatae quibusdam distinctio maiores\nearum voluptates et aut adipisci ea maiores voluptas maxime"
+  },
+  {
+    "userId": 4,
+    "id": 33,
+    "title": "qui explicabo molestiae dolorem",
+    "body": "rerum ut et numquam laborum odit est sit\nid qui sint in\nquasi tenetur tempore aperiam et quaerat qui in\nrerum officiis sequi cumque quod"
+  },
+  {
+    "userId": 4,
+    "id": 34,
+    "title": "magnam ut rerum iure",
+    "body": "ea velit perferendis earum ut voluptatem voluptate itaque iusto\ntotam pariatur in\nnemo voluptatem voluptatem autem magni tempora minima in\nest distinctio qui assumenda accusamus dignissimos officia nesciunt nobis"
+  },
+  {
+    "userId": 4,
+    "id": 35,
+    "title": "id nihil consequatur molestias animi provident",
+    "body": "nisi error delectus possimus ut eligendi vitae\nplaceat eos harum cupiditate facilis reprehenderit voluptatem beatae\nmodi ducimus quo illum voluptas eligendi\net nobis quia fugit"
+  },
+  {
+    "userId": 4,
+    "id": 36,
+    "title": "fuga nam accusamus voluptas reiciendis itaque",
+    "body": "ad mollitia et omnis minus architecto odit\nvoluptas doloremque maxime aut non ipsa qui alias veniam\nblanditiis culpa aut quia nihil cumque facere et occaecati\nqui aspernatur quia eaque ut aperiam inventore"
+  },
+  {
+    "userId": 4,
+    "id": 37,
+    "title": "provident vel ut sit ratione est... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2024-02-16T01:48:49.991826" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${API_URL}${path}</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.712636" elapsed="0.279190"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:49.991826" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.991826" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.712636" elapsed="0.280192"/>
+</kw>
+<kw name="Quando valido o response &quot;responsePosts&quot;" owner="services" source_name="Quando valido o response &quot;${expectedResponseJson}&quot;">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-02-16T01:48:49.993829" level="INFO">${fileJson} = [{'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 'body': 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderi...</msg>
+<var>${fileJson}</var>
+<arg>${EXECDIR}/resources/fixtures/${expectedResponseJson}.json</arg>
+<arg>encoding=utf-8</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.992828" elapsed="0.001001"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<arg>${fileJson}</arg>
+<arg>msg=Response diferente do esperado</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.993829" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.992828" elapsed="0.002002"/>
+</kw>
+<kw name="Então recebo o status code &quot;200&quot;" owner="services" source_name="Então recebo o status code &quot;${expectedStatusCode}&quot;">
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${expectedStatusCode}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.994830" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.994830" elapsed="0.000000"/>
+</kw>
+<kw name="E valido o schema &quot;schemaPosts&quot;" owner="services" source_name="E valido o schema &quot;${schema}&quot;">
+<kw name="Validate Jsonschema From File" owner="JsonValidator">
+<arg>${response.json()}</arg>
+<arg>${EXECDIR}/resources/fixtures/${schema}.json</arg>
+<doc>Validate JSON according to schema, loaded from a file.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.995831" elapsed="0.022019"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.994830" elapsed="0.023020"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:49.711635" elapsed="0.306215"/>
+</test>
+<test id="s1-s2-t3" name="CT003 - GET no /comments, valida response, schema e status code" line="23">
+<kw name="Dado que realizo GET no endpoint &quot;comments&quot;" owner="services" source_name="Dado que realizo GET no endpoint &quot;${path}&quot;">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2024-02-16T01:48:50.306106" level="INFO">GET Request : url=http://jsonplaceholder.typicode.com/comments 
+ path_url=/comments 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-02-16T01:48:50.306106" level="INFO">GET Response : url=http://jsonplaceholder.typicode.com/comments 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 16 Feb 2024 04:48:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708011866&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Qe4ZQknzirgse%2F4Gq0m5ZFVdiTNgLSOrxvmFyuDES6Y%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708011866&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Qe4ZQknzirgse%2F4Gq0m5ZFVdiTNgLSOrxvmFyuDES6Y%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1708011877', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"26831-8L/dCHuriTuxj+1OR5biYTSa5Yo"', 'Content-Encoding': 'gzip', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '10304', 'Server': 'cloudflare', 'CF-RAY': '85632913a9b85c64-MIA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body=[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "id labore ex et quam laborum",
+    "email": "Eliseo@gardner.biz",
+    "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+  },
+  {
+    "postId": 1,
+    "id": 2,
+    "name": "quo vero reiciendis velit similique earum",
+    "email": "Jayne_Kuhic@sydney.com",
+    "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+  },
+  {
+    "postId": 1,
+    "id": 3,
+    "name": "odio adipisci rerum aut animi",
+    "email": "Nikita@garfield.biz",
+    "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+  },
+  {
+    "postId": 1,
+    "id": 4,
+    "name": "alias odio sit",
+    "email": "Lew@alysha.tv",
+    "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+  },
+  {
+    "postId": 1,
+    "id": 5,
+    "name": "vero eaque aliquid doloribus et culpa",
+    "email": "Hayden@althea.biz",
+    "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+  },
+  {
+    "postId": 2,
+    "id": 6,
+    "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
+    "email": "Presley.Mueller@myrl.com",
+    "body": "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
+  },
+  {
+    "postId": 2,
+    "id": 7,
+    "name": "repellat consequatur praesentium vel minus molestias voluptatum",
+    "email": "Dallas@ole.me",
+    "body": "maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor"
+  },
+  {
+    "postId": 2,
+    "id": 8,
+    "name": "et omnis dolorem",
+    "email": "Mallory_Kunze@marie.org",
+    "body": "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque"
+  },
+  {
+    "postId": 2,
+    "id": 9,
+    "name": "provident id voluptas",
+    "email": "Meghan_Littel@rene.us",
+    "body": "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus"
+  },
+  {
+    "postId": 2,
+    "id": 10,
+    "name": "eaque et deleniti atque tenetur ut quo ut",
+    "email": "Carmen_Keeling@caroline.name",
+    "body": "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
+  },
+  {
+    "postId": 3,
+    "id": 11,
+    "name": "fugit labore quia mollitia quas deserunt nostrum sunt",
+    "email": "Veronica_Goodwin@timmothy.net",
+    "body": "ut dolorum nostrum id quia aut est\nfuga est inventore vel eligendi explicabo quis consectetur\naut occaecati repellat id natus quo est\nut blanditiis quia ut vel ut maiores ea"
+  },
+  {
+    "postId": 3,
+    "id": 12,
+    "name": "modi ut eos dolores illum nam dolor",
+    "email": "Oswald.Vandervort@leanne.org",
+    "body": "expedita maiores dignissimos facilis\nipsum est rem est fugit velit sequi\neum odio dolores dolor totam\noccaecati ratione eius rem velit"
+  },
+  {
+    "postId": 3,
+    "id": 13,
+    "name": "aut inventore non pariatur sit vitae voluptatem sapiente",
+    "email": "Kariane@jadyn.tv",
+    "body": "fuga eos qui dolor rerum\ninventore corporis exercitationem\ncorporis cupiditate et deserunt recusandae est sed quis culpa\neum maiores corporis et"
+  },
+  {
+    "postId": 3,
+    "id": 14,
+    "name": "et officiis id praesentium hic aut ipsa dolorem repudiandae",
+    "email": "Nathan@solon.io",
+    "body": "vel quae voluptas qui exercitationem\nvoluptatibus unde sed\nminima et qui ipsam aspernatur\nexpedita magnam laudantium et et quaerat ut qui dolorum"
+  },
+  {
+    "postId": 3,
+    "id": 15,
+    "name": "debitis magnam hic odit aut ullam nostrum tenetur",
+    "email": "Maynard.Hodkiewicz@roberta.com",
+    "body": "nihil ut voluptates blanditiis autem odio dicta rerum\nquisquam saepe et est\nsunt quasi nemo laudantium deserunt\nmolestias tempora quo quia"
+  },
+  {
+    "postId": 4,
+    "id": 16,
+    "name": "perferendis temporibus delectus optio ea eum ratione dolorum",
+    "email": "Christine@ayana.info",
+    "body": "iste ut laborum aliquid velit facere itaque\nquo ut soluta dicta voluptate\nerror tempore aut et\nsequi reiciendis dignissimos expedita consequuntur libero sed fugiat facilis"
+  },
+  {
+    "postId": 4,
+    "id": 17,
+    "name": "eos est animi quis",
+    "email": "Preston_Hudson@blaise.tv",
+    "body": "consequatur necessitatibus totam sed sit dolorum\nrecusandae quae odio excepturi voluptatum harum voluptas\nquisquam sit ad eveniet delectus\ndoloribus odio qui non labore"
+  },
+  {
+    "postId": 4,
+    "id": 18,
+    "name": "aut et tenetur ducimus illum aut nulla ab",
+    "email": "Vincenza_Klocko@albertha.name",
+    "body": "veritatis voluptates necessitatibus maiores corrupti\nneque et exercitationem amet sit et\nullam velit sit magnam laborum\nmagni ut molestias"
+  },
+  {
+    "postId": 4,
+    "id": 19,
+    "name": "sed impedit rerum quia et et inventore unde officiis",
+    "email": "Madelynn.Gorczany@darion.biz",
+    "body": "doloribus est illo sed minima aperiam\nut dignissimos accusantium tempore atque et aut molestiae\nmagni ut accusamus voluptatem quos ut voluptates\nquisquam porro sed architecto ut"
+  },
+  {
+    "postId": 4,
+    "id": 20,
+    "name": "molestias expedita iste aliquid voluptates",
+    "email": "Mariana_Orn@preston.org",
+    "body": "qui harum consequatur fugiat\net eligendi perferendis at molestiae commodi ducimus\ndoloremque asperiores numquam qui\nut sit dignissimos reprehenderit tempore"
+  },
+  {
+    "postId": 5,
+    "id": 21,
+    "name": "aliquid rerum mollitia qui a consectetur eum sed",
+    "email": "Noemie@marques.me",
+    "body": "deleniti aut sed molestias explicabo\ncommodi odio ratione nesciunt\nvoluptate doloremque est\nnam autem error delectus"
+  },
+  {
+    "postId": 5,
+    "id": 22,
+    "name": "porro repellendus aut tempore quis hic",
+    "email": "Khalil@emile.co.uk",
+    "body": "qui ipsa animi nostrum praesentium voluptatibus odit\nqui non impedit cum qui nostrum aliquid fuga explicabo\nvoluptatem fugit earum voluptas exercitationem temporibus dignissimos distinctio\nesse inventore reprehenderit quidem ut incidunt nihil necessitatibus rerum"
+  },
+  {
+    "postId": 5,
+    "id": 23,
+    "name": "quis tempora quidem nihil iste",
+    "email": "Sophia@arianna.co.uk",
+    "body": "voluptates provident repellendus iusto perspiciatis ex fugiat ut\nut dolor nam aliquid et expedita voluptate\nsunt vitae illo rerum in quos\nvel eligendi enim quae fugiat est"
+  },
+  {
+    "postId": 5,
+    "id": 24,
+    "name": "in tempore eos beatae est",
+    "email": "Jeffery@juwan.us",
+    "body": "repudiandae repellat quia\nsequi est dolore explicabo nihil et\net sit et\net praesentium iste atque asperiores tenetur"
+  },
+  {
+    "postId": 5,
+    "id": 25,
+    "name": "autem ab ea sit alias hic provident sit",
+    "email": "Isaias_Kuhic@jarrett.net",
+    "body": "sunt aut quae laboriosam sit ut impedit\nadipisci harum laborum totam deleniti voluptas odit rem ea\nnon iure distinctio ut velit doloribus\net non ex"
+  },
+  {
+    "postId": 6,
+    "id": 26,
+    "name": "in deleniti sunt provident soluta ratione veniam quam praesentium",
+    "email": "Russel.Parker@kameron.io",
+    "body": "incidunt sapiente eaque dolor eos\nad est molestias\nquas sit et nihil exercitationem at cumque ullam\nnihil magnam et"
+  },
+  {
+    "postId": 6,
+    "id": 27,
+    "name": "doloribus quibusdam molestiae amet illum",
+    "email": "Francesco.Gleason@nella.us",
+    "body": "nisi vel quas ut laborum ratione\nrerum magni eum\nunde et voluptatem saepe\nvoluptas corporis modi amet ipsam eos saepe porro"
+  },
+  {
+    "postId": 6,
+    "id": 28,
+    "name": "quo voluptates voluptas nisi veritatis dignissimos dolores ut officiis",
+    "email": "Ronny@rosina.org",
+    "body": "voluptatem repellendus quo alias at laudantium\nmollitia quidem esse\ntemporibus consequuntur vitae rerum illum\nid corporis sit id"
+  },
+  {
+    "postId": 6,
+    "id": 29,
+    "name": "eum distinctio amet dolor",
+    "email": "Jennings_Pouros@erica.biz",
+    "body": "tempora voluptatem est\nmagnam distinctio autem est dolorem\net ipsa molestiae odit rerum itaque corporis nihil nam\neaque rerum error"
+  },
+  {
+    "postId": 6,
+    "id": 30,
+    "name": "quasi nulla ducimus facilis non voluptas aut",
+    "email": "Lurline@marvin.biz",
+    "body": "consequuntur quia voluptate assumenda et\nautem voluptatem reiciendis ipsum animi est provident\nearum aperiam sapiente ad vitae iste\naccusantium aperiam eius qui dolore voluptatem et"
+  },
+  {
+    "postId": 7,
+    "id": 31,
+    "name": "ex velit ut cum eius odio ad placeat",
+    "email": "Buford@shaylee.biz",
+    "body": "quia incidunt ut\naliquid est ut rerum deleniti iure est\nipsum quia ea sint et\nvoluptatem quaerat eaque repudiandae eveniet aut"
+  },
+  {
+    "postId": 7,
+    "id": 32,
+    "name": "dolorem architecto ut pariatur quae qui suscipit",
+    "email": "Maria@laurel.name",
+    "body": "nihil ea itaque libero illo\nofficiis quo quo dicta inventore consequatur voluptas voluptatem\ncorporis sed necessitatibus velit tempore\nrerum velit et temporibus"
+  },
+  {
+    "postId": 7,
+    "id": 33,
+    "name": "voluptatum totam vel voluptate omnis",
+    "email": "Jaeden.Towne@arlene.tv",
+    "body": "fugit harum quae vero\nlibero unde tempore... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2024-02-16T01:48:50.306106" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${API_URL}${path}</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.020853" elapsed="0.285253"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.306106" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.306106" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.020853" elapsed="0.285253"/>
+</kw>
+<kw name="Quando valido o response &quot;responseComments&quot;" owner="services" source_name="Quando valido o response &quot;${expectedResponseJson}&quot;">
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2024-02-16T01:48:50.308509" level="INFO">${fileJson} = [{'postId': 1, 'id': 1, 'name': 'id labore ex et quam laborum', 'email': 'Eliseo@gardner.biz', 'body': 'laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor q...</msg>
+<var>${fileJson}</var>
+<arg>${EXECDIR}/resources/fixtures/${expectedResponseJson}.json</arg>
+<arg>encoding=utf-8</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.306106" elapsed="0.002403"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<arg>${fileJson}</arg>
+<arg>msg=Response diferente do esperado</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.308509" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.306106" elapsed="0.003403"/>
+</kw>
+<kw name="Então recebo o status code &quot;200&quot;" owner="services" source_name="Então recebo o status code &quot;${expectedStatusCode}&quot;">
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${expectedStatusCode}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.310511" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.309509" elapsed="0.001002"/>
+</kw>
+<kw name="E valido o schema &quot;schemaComments&quot;" owner="services" source_name="E valido o schema &quot;${schema}&quot;">
+<kw name="Validate Jsonschema From File" owner="JsonValidator">
+<arg>${response.json()}</arg>
+<arg>${EXECDIR}/resources/fixtures/${schema}.json</arg>
+<doc>Validate JSON according to schema, loaded from a file.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.310511" elapsed="0.128116"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.310511" elapsed="0.128116"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.019852" elapsed="0.418775"/>
+</test>
+<test id="s1-s2-t4" name="CT004 - POST no /posts e valida response status" line="31">
+<kw name="Dado que informo &quot;Meu post&quot; no campo &quot;title&quot; e &quot;Post diário&quot; no campo &quot;body&quot;" owner="services" source_name="Dado que informo &quot;${valueTitle}&quot; no campo &quot;${fieldTitle}&quot; e &quot;${valueBody}&quot; no campo &quot;${fieldBody}&quot;">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.441630" level="INFO">${valueTitle} = Meu post</msg>
+<arg>${valueTitle}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.441630" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.442631" level="INFO">${fieldTitle} = title</msg>
+<arg>${fieldTitle}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.442631" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.442631" level="INFO">${valueBody} = Post diário</msg>
+<arg>${valueBody}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.442631" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.442631" level="INFO">${fieldBody} = body</msg>
+<arg>${fieldBody}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.442631" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.441630" elapsed="0.001001"/>
+</kw>
+<kw name="Quando realizo POST no endpoint &quot;posts&quot; para o usuario &quot;10&quot;" owner="services" source_name="Quando realizo POST no endpoint &quot;${path}&quot; para o usuario &quot;${userId}&quot;">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.442631" level="INFO">${userId} = 10</msg>
+<arg>${userId}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.442631" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.443632" level="INFO">${path} = posts</msg>
+<arg>${path}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.443632" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.443632" level="INFO">${payload} = {'title': 'Meu post', 'body': 'Post diário', '10': '10'}</msg>
+<var>${payload}</var>
+<arg>${fieldTitle}=${valueTitle}</arg>
+<arg>${fieldBody}=${valueBody}</arg>
+<arg>${userId}=${userId}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.443632" elapsed="0.000000"/>
+</kw>
+<kw name="POST" owner="RequestsLibrary">
+<msg time="2024-02-16T01:48:50.799356" level="INFO">POST Request : url=http://jsonplaceholder.typicode.com/posts 
+ path_url=/posts 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '61', 'Content-Type': 'application/json'} 
+ body=b'{"title": "Meu post", "body": "Post di\\u00e1rio", "10": "10"}' 
+ </msg>
+<msg time="2024-02-16T01:48:50.799356" level="INFO">POST Response : url=http://jsonplaceholder.typicode.com/posts 
+ status=201, reason=Created 
+ headers={'Date': 'Fri, 16 Feb 2024 04:48:49 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '78', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708058929&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=V3pip4lHkJO9kAxcY2T9M7m%2FP9LxPAMzOK6XKox9m14%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708058929&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=V3pip4lHkJO9kAxcY2T9M7m%2FP9LxPAMzOK6XKox9m14%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1708058950', 'Vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'Access-Control-Expose-Headers': 'Location', 'Location': 'http://jsonplaceholder.typicode.com/posts/101', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"4e-boeywJqAsRD7eettcr4yfQve1fo"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '856329164e6025be-MIA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "10": "10",
+  "title": "Meu post",
+  "body": "Post diário",
+  "id": 101
+} 
+ </msg>
+<msg time="2024-02-16T01:48:50.799356" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>${API_URL}${path}</arg>
+<arg>json=${payload}</arg>
+<doc>Sends a POST request.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.443632" elapsed="0.355724"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.442631" elapsed="0.356725"/>
+</kw>
+<kw name="Então recebo o status code &quot;201&quot;" owner="services" source_name="Então recebo o status code &quot;${expectedStatusCode}&quot;">
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${expectedStatusCode}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.799356" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.799356" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.440629" elapsed="0.359739"/>
+</test>
+<test id="s1-s2-t5" name="CT005 - PUT no /posts/1 e valida response status" line="38">
+<kw name="Dado que informo &quot;Novo titulo&quot; no campo &quot;title&quot; e &quot;Post Alterado com sucesso&quot; no campo &quot;body&quot;" owner="services" source_name="Dado que informo &quot;${valueTitle}&quot; no campo &quot;${fieldTitle}&quot; e &quot;${valueBody}&quot; no campo &quot;${fieldBody}&quot;">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.803371" level="INFO">${valueTitle} = Novo titulo</msg>
+<arg>${valueTitle}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.803371" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.803371" level="INFO">${fieldTitle} = title</msg>
+<arg>${fieldTitle}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.803371" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.804372" level="INFO">${valueBody} = Post Alterado com sucesso</msg>
+<arg>${valueBody}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.804372" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.804372" level="INFO">${fieldBody} = body</msg>
+<arg>${fieldBody}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.804372" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.803371" elapsed="0.001001"/>
+</kw>
+<kw name="Quando realizo PUT no endpoint &quot;posts/1&quot; para o usuario &quot;10&quot;" owner="services" source_name="Quando realizo PUT no endpoint &quot;${path}&quot; para o usuario &quot;${userId}&quot;">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.804372" level="INFO">${userId} = 10</msg>
+<arg>${userId}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.804372" elapsed="0.000000"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.804372" level="INFO">${path} = posts/1</msg>
+<arg>${path}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.804372" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-16T01:48:50.805372" level="INFO">${payload} = {'title': 'Novo titulo', 'body': 'Post Alterado com sucesso', '10': '10'}</msg>
+<var>${payload}</var>
+<arg>${fieldTitle}=${valueTitle}</arg>
+<arg>${fieldBody}=${valueBody}</arg>
+<arg>${userId}=${userId}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.804372" elapsed="0.001000"/>
+</kw>
+<kw name="PUT" owner="RequestsLibrary">
+<msg time="2024-02-16T01:48:51.139365" level="INFO">PUT Request : url=http://jsonplaceholder.typicode.com/posts/1 
+ path_url=/posts/1 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '73', 'Content-Type': 'application/json'} 
+ body=b'{"title": "Novo titulo", "body": "Post Alterado com sucesso", "10": "10"}' 
+ </msg>
+<msg time="2024-02-16T01:48:51.139869" level="INFO">PUT Response : url=http://jsonplaceholder.typicode.com/posts/1 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 16 Feb 2024 04:48:50 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708058930&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=DGciVK8Yt3ZbomHCJldkZe4yh6v85IaQUN8IdKVzhuw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708058930&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=DGciVK8Yt3ZbomHCJldkZe4yh6v85IaQUN8IdKVzhuw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '998', 'X-Ratelimit-Reset': '1708058950', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"5c-2LFoj2dPoOIIm6vvphyEavW5ygk"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '856329188f226db0-MIA', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "10": "10",
+  "title": "Novo titulo",
+  "body": "Post Alterado com sucesso",
+  "id": 1
+} 
+ </msg>
+<arg>${API_URL}${path}</arg>
+<arg>json=${payload}</arg>
+<doc>Sends a PUT request.</doc>
+<status status="PASS" start="2024-02-16T01:48:50.805372" elapsed="0.334497"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.804372" elapsed="0.335497"/>
+</kw>
+<kw name="Então recebo o status code &quot;200&quot;" owner="services" source_name="Então recebo o status code &quot;${expectedStatusCode}&quot;">
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${expectedStatusCode}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-02-16T01:48:51.139869" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:51.139869" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:50.802370" elapsed="0.338501"/>
+</test>
+<test id="s1-s2-t6" name="CT006 - DELETE no /posts/1 e valida response status" line="45">
+<kw name="Quando realizo DELETE no endpoint &quot;posts/5&quot;" owner="services" source_name="Quando realizo DELETE no endpoint &quot;${path}&quot;">
+<kw name="Set Suite Variable" owner="BuiltIn">
+<msg time="2024-02-16T01:48:51.143873" level="INFO">${path} = posts/5</msg>
+<arg>${path}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="PASS" start="2024-02-16T01:48:51.143873" elapsed="0.000000"/>
+</kw>
+<kw name="DELETE" owner="RequestsLibrary">
+<msg time="2024-02-16T01:48:51.480884" level="INFO">DELETE Request : url=http://jsonplaceholder.typicode.com/posts/5 
+ path_url=/posts/5 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2024-02-16T01:48:51.480884" level="INFO">DELETE Response : url=http://jsonplaceholder.typicode.com/posts/5 
+ status=200, reason=OK 
+ headers={'Date': 'Fri, 16 Feb 2024 04:48:50 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1708058930&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=DGciVK8Yt3ZbomHCJldkZe4yh6v85IaQUN8IdKVzhuw%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1708058930&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=DGciVK8Yt3ZbomHCJldkZe4yh6v85IaQUN8IdKVzhuw%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '997', 'X-Ratelimit-Reset': '1708058950', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '8563291aa9da80ca-MIA', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={} 
+ </msg>
+<arg>${API_URL}${path}</arg>
+<doc>Sends a DELETE request.</doc>
+<status status="PASS" start="2024-02-16T01:48:51.143873" elapsed="0.337011"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:51.143873" elapsed="0.337011"/>
+</kw>
+<kw name="Então recebo o status code &quot;200&quot;" owner="services" source_name="Então recebo o status code &quot;${expectedStatusCode}&quot;">
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>${expectedStatusCode}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2024-02-16T01:48:51.481885" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:51.481885" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-16T01:48:51.142873" elapsed="0.339012"/>
+</test>
+<doc>Suite de teste que valida API REST.</doc>
+<status status="PASS" start="2024-02-16T01:48:49.244242" elapsed="2.240645"/>
+</suite>
+<status status="PASS" start="2024-02-16T01:48:40.300835" elapsed="11.186054"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Cliques">Tests.Cliques</stat>
+<stat pass="6" fail="0" skip="0" id="s1-s2" name="Requests">Tests.Requests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
