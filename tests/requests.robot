@@ -29,19 +29,19 @@ CT003 - GET no /comments, valida response, schema e status code
 ##### POST #####
 
 CT004 - POST no /posts e valida response status
-    Dado que informo "Meu post" no campo "title" e "Post diário" no campo "body"
+    Dado que informo "Meu post" no campo title e "Post diário" no campo body
     Quando realizo POST no endpoint "posts" para o usuario "10"
     Então recebo o status code "201"
 
 ##### PUT #####
 
 CT005 - PUT no /posts/1 e valida response status
-    Dado que informo "Novo titulo" no campo "title" e "Post Alterado com sucesso" no campo "body"
+    Dado que informo "Novo titulo" no campo title e "Post Alterado com sucesso" no campo body
     Quando realizo PUT no endpoint "posts/1" para o usuario "10"
     Então recebo o status code "200"
 
 ##### DELETE #####
 
 CT006 - DELETE no /posts/1 e valida response status
-    Quando realizo DELETE no endpoint "posts/5"
+    Quando realizo DELETE no endpoint "posts/1"
     Então recebo o status code "200"

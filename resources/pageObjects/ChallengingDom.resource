@@ -27,16 +27,3 @@ Clica em todos os botões edit e delete da grid
         Click       ${button-edit}
         Click       ${button-delete}
     END
-
-
-
-
-    
-
-
-
-
-
-
-
-
